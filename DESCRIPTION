@@ -1,0 +1,22 @@
+Package: ps0046
+Title: Auxiliary data, functions and configurations for statistics course
+Version: 0.0.0
+Authors@R:
+    person("Armel", "Brizuela Rodríguez", , "armel.brizuelarodriguez@ucr.ac.cr", role = c("aut", "cre"))
+Author: Armel Brizuela Rodríguez
+Maintainer: Armel Brizuela Rodríguez <armel.brizuelarodriguez@ucr.ac.cr>
+Description: This packages helps people to use R.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Suggests:
+    afex,
+    DHARMa,
+    haven,
+    marginaleffects,
+    qqplotr,
+    readxl,
+    see

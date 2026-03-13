@@ -1,0 +1,24 @@
+#' Percentage of Individuals Using the Internet by Country (2021)
+#'
+#' Percentage of individuals using the internet in the year 2021 by country.
+#'
+#' @format A data frame with 45 observations and 11 variables:
+#' \describe{
+#'   \item{Country}{Country name.}
+#'   \item{CountryCode}{Three-letter ISO country code.}
+#'   \item{SrvEMP2021}{Percentage of individuals using the internet for online employment services in 2021.}
+#'   \item{InternetUse2021}{Percentage of individuals using the internet in 2021.}
+#'   \item{GDP}{Gross Domestic Product per capita (current USD).}
+#'   \item{UrbanPop2021}{Urban population as a percentage of total population in 2021.}
+#'   \item{FixedTelephone}{Fixed telephone subscriptions per 100 inhabitants.}
+#'   \item{PopDensity}{Population density (people per square kilometer).}
+#'   \item{InfantMortality}{Infant mortality rate (deaths per 1,000 live births).}
+#'   \item{FertilityRate}{Fertility rate (births per woman).}
+#'   \item{Group}{Categorical binary variable indicating economic development status: R (Rich economies) or NSR (Not so rich economies).}
+#' }
+#' @source World Bank World Development Indicators from the International
+#'   Telecommunication Union (ITU) World Telecommunication/ICT Indicators
+#'   Database. \url{https://databank.worldbank.org/reports.aspx?source=world-development-indicators}
+#' @keywords datasets
+#' @name Figures_1_1_and_6_1
+NULL
