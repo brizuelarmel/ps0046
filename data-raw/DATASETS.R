@@ -33,5 +33,8 @@ filename_spss <- tools::file_path_sans_ext(basename(file_spss))
 # Read the SPSS file
 Latinobarometro_2023_Costa_Rica_Spss_esp_v1 <- haven::read_spss(file_spss)
 
+# Remove labels
+Latinobarometro_2023_Costa_Rica_Spss_esp_v1 <- haven::zap_labels(Latinobarometro_2023_Costa_Rica_Spss_esp_v1)
+
 # Save as dataset
 save(Latinobarometro_2023_Costa_Rica_Spss_esp_v1, file = "data/Latinobarometro_2023_Costa_Rica_Spss_esp_v1.rda", compress = TRUE)
