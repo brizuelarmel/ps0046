@@ -1,0 +1,127 @@
+#' Big Five Personality Test Data (Costa Rica)
+#'
+#' This dataset contains responses from a Big Five personality test conducted
+#' online between 2016-2018. The test was constructed with the "Big-Five Factor
+#' Markers" from the IPIP (International Personality Item Pool).
+#'
+#' @format A data frame with personality test responses and metadata:
+#' \describe{
+#'   \item{EXT1}{I am the life of the party. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{EXT2}{I don't talk a lot. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{EXT3}{I feel comfortable around people. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{EXT4}{I keep in the background. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{EXT5}{I start conversations. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{EXT6}{I have little to say. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{EXT7}{I talk to a lot of different people at parties. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{EXT8}{I don't like to draw attention to myself. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{EXT9}{I don't mind being the center of attention. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{EXT10}{I am quiet around strangers. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{EST1}{I get stressed out easily. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{EST2}{I am relaxed most of the time. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{EST3}{I worry about things. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{EST4}{I seldom feel blue. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{EST5}{I am easily disturbed. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{EST6}{I get upset easily. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{EST7}{I change my mood a lot. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{EST8}{I have frequent mood swings. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{EST9}{I get irritated easily. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{EST10}{I often feel blue. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{AGR1}{I feel little concern for others. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{AGR2}{I am interested in people. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{AGR3}{I insult people. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{AGR4}{I sympathize with others' feelings. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{AGR5}{I am not interested in other people's problems. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{AGR6}{I have a soft heart. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{AGR7}{I am not really interested in others. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{AGR8}{I take time out for others. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{AGR9}{I feel others' emotions. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{AGR10}{I make people feel at ease. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{CSN1}{I am always prepared. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{CSN2}{I leave my belongings around. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{CSN3}{I pay attention to details. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{CSN4}{I make a mess of things. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{CSN5}{I get chores done right away. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{CSN6}{I often forget to put things back in their proper place. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{CSN7}{I like order. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{CSN8}{I shirk my duties. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{CSN9}{I follow a schedule. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{CSN10}{I am exacting in my work. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{OPN1}{I have a rich vocabulary. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{OPN2}{I have difficulty understanding abstract ideas. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{OPN3}{I have a vivid imagination. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{OPN4}{I am not interested in abstract ideas. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{OPN5}{I have excellent ideas. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{OPN6}{I do not have a good imagination. (1=Disagree, 3=Neutral, 5=Agree) \verb{*}}
+#'   \item{OPN7}{I am quick to understand things. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{OPN8}{I use difficult words. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{OPN9}{I spend time reflecting on things. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{OPN10}{I am full of ideas. (1=Disagree, 3=Neutral, 5=Agree)}
+#'   \item{EXT1_E}{Time spent on EXT1 question in milliseconds.}
+#'   \item{EXT2_E}{Time spent on EXT2 question in milliseconds.}
+#'   \item{EXT3_E}{Time spent on EXT3 question in milliseconds.}
+#'   \item{EXT4_E}{Time spent on EXT4 question in milliseconds.}
+#'   \item{EXT5_E}{Time spent on EXT5 question in milliseconds.}
+#'   \item{EXT6_E}{Time spent on EXT6 question in milliseconds.}
+#'   \item{EXT7_E}{Time spent on EXT7 question in milliseconds.}
+#'   \item{EXT8_E}{Time spent on EXT8 question in milliseconds.}
+#'   \item{EXT9_E}{Time spent on EXT9 question in milliseconds.}
+#'   \item{EXT10_E}{Time spent on EXT10 question in milliseconds.}
+#'   \item{EST1_E}{Time spent on EST1 question in milliseconds.}
+#'   \item{EST2_E}{Time spent on EST2 question in milliseconds.}
+#'   \item{EST3_E}{Time spent on EST3 question in milliseconds.}
+#'   \item{EST4_E}{Time spent on EST4 question in milliseconds.}
+#'   \item{EST5_E}{Time spent on EST5 question in milliseconds.}
+#'   \item{EST6_E}{Time spent on EST6 question in milliseconds.}
+#'   \item{EST7_E}{Time spent on EST7 question in milliseconds.}
+#'   \item{EST8_E}{Time spent on EST8 question in milliseconds.}
+#'   \item{EST9_E}{Time spent on EST9 question in milliseconds.}
+#'   \item{EST10_E}{Time spent on EST10 question in milliseconds.}
+#'   \item{AGR1_E}{Time spent on AGR1 question in milliseconds.}
+#'   \item{AGR2_E}{Time spent on AGR2 question in milliseconds.}
+#'   \item{AGR3_E}{Time spent on AGR3 question in milliseconds.}
+#'   \item{AGR4_E}{Time spent on AGR4 question in milliseconds.}
+#'   \item{AGR5_E}{Time spent on AGR5 question in milliseconds.}
+#'   \item{AGR6_E}{Time spent on AGR6 question in milliseconds.}
+#'   \item{AGR7_E}{Time spent on AGR7 question in milliseconds.}
+#'   \item{AGR8_E}{Time spent on AGR8 question in milliseconds.}
+#'   \item{AGR9_E}{Time spent on AGR9 question in milliseconds.}
+#'   \item{AGR10_E}{Time spent on AGR10 question in milliseconds.}
+#'   \item{CSN1_E}{Time spent on CSN1 question in milliseconds.}
+#'   \item{CSN2_E}{Time spent on CSN2 question in milliseconds.}
+#'   \item{CSN3_E}{Time spent on CSN3 question in milliseconds.}
+#'   \item{CSN4_E}{Time spent on CSN4 question in milliseconds.}
+#'   \item{CSN5_E}{Time spent on CSN5 question in milliseconds.}
+#'   \item{CSN6_E}{Time spent on CSN6 question in milliseconds.}
+#'   \item{CSN7_E}{Time spent on CSN7 question in milliseconds.}
+#'   \item{CSN8_E}{Time spent on CSN8 question in milliseconds.}
+#'   \item{CSN9_E}{Time spent on CSN9 question in milliseconds.}
+#'   \item{CSN10_E}{Time spent on CSN10 question in milliseconds.}
+#'   \item{OPN1_E}{Time spent on OPN1 question in milliseconds.}
+#'   \item{OPN2_E}{Time spent on OPN2 question in milliseconds.}
+#'   \item{OPN3_E}{Time spent on OPN3 question in milliseconds.}
+#'   \item{OPN4_E}{Time spent on OPN4 question in milliseconds.}
+#'   \item{OPN5_E}{Time spent on OPN5 question in milliseconds.}
+#'   \item{OPN6_E}{Time spent on OPN6 question in milliseconds.}
+#'   \item{OPN7_E}{Time spent on OPN7 question in milliseconds.}
+#'   \item{OPN8_E}{Time spent on OPN8 question in milliseconds.}
+#'   \item{OPN9_E}{Time spent on OPN9 question in milliseconds.}
+#'   \item{OPN10_E}{Time spent on OPN10 question in milliseconds.}
+#'   \item{dateload}{The timestamp when the survey was started.}
+#'   \item{screenw}{The width of the user's screen in pixels.}
+#'   \item{screenh}{The height of the user's screen in pixels.}
+#'   \item{introelapse}{The time in seconds spent on the landing/intro page.}
+#'   \item{testelapse}{The time in seconds spent on the page with the survey questions.}
+#'   \item{endelapse}{The time in seconds spent on the finalization page.}
+#'   \item{IPC}{The number of records from the user's IP address in the dataset. For max cleanliness, only use records where this value is 1.}
+#'   \item{country}{The country, determined by technical information (not asked as a question).}
+#'   \item{lat_appx_lots_of_err}{Approximate latitude of user. Determined by technical information; this is not very accurate.}
+#'   \item{long_appx_lots_of_err}{Approximate longitude of user. Determined by technical information.}
+#'   \item{location_name}{Location name.}
+#' }
+#' @source International Personality Item Pool (IPIP).
+#'   \url{https://ipip.ori.org/newBigFive5broadKey.htm}
+#' @keywords datasets
+#' @name big5CR
+#'
+#' @note Items marked with * are reverse-scored (higher values indicate lower trait levels).
+NULL
