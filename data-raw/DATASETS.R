@@ -48,7 +48,7 @@ filename_big5 <- tools::file_path_sans_ext(basename(file_big5))
 # Read the csv file
 big5CR <- readr::read_csv(file_big5)
 
-big5CR <- mutate(big5CR, across(EXT1:OPN10_E, \(x) dplyr::na_if(x, "NULL")))
+big5CR <- dplyr::mutate(big5CR, across(EXT1:OPN10_E, \(x) dplyr::na_if(x, "NULL")))
 
 big5CR <- dplyr::mutate(big5CR, across(EXT1:OPN10_E, as.integer))
 
@@ -63,6 +63,50 @@ big5CR <- dplyr::mutate(
     \(x) dplyr::recode_values(x, 1 ~ 5, 2 ~ 4, 3 ~ 3, 4 ~ 2, 5 ~ 1, 0 ~ NA)))
 
 big5CR <- tidyr::drop_na(big5CR, EXT1:OPN10_E)
+
+equalize_mean_median <- function(Yi, tol = 1e-6, min_n = 50) {
+  indices  <- seq_along(Yi)
+  removed  <- integer(0)
+  
+  repeat {
+    y   <- Yi[indices]
+    gap <- abs(mean(y) - median(y))
+    
+    cat("n =", length(indices), "| gap =", round(gap, 8), "\n")
+    
+    if (gap <= tol || length(indices) <= min_n) break
+    
+    gaps <- sapply(seq_along(indices), function(j) {
+      trial <- Yi[indices[-j]]
+      abs(mean(trial) - median(trial))
+    })
+    
+    worst   <- which.min(gaps)
+    removed <- c(removed, indices[worst])
+    indices <- indices[-worst]
+  }
+  
+  list(
+    selected = indices,
+    removed  = removed,
+    Yi_sym   = Yi[indices]
+  )
+}
+
+big5CR <- dplyr::mutate(
+  big5CR,
+  Yi = rowSums(dplyr::across(EXT1:EXT10))
+)
+
+result  <- equalize_mean_median(big5CR$Yi, tol = 1e-6, min_n = 50)
+
+Yi_sym  <- result$Yi_sym
+selected <- result$selected
+removed  <- result$removed
+
+big5CR <- big5CR[selected, ]
+
+big5CR$Yi <- NULL
 
 # Save as dataset
 save(big5CR, file = "data/big5CR.rda", compress = TRUE)
