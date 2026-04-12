@@ -5,6 +5,8 @@ if (!dir.exists("data")) {
   dir.create("data")
 }
 
+# Figures_1_1_and_6_1
+
 # Read the Figures_1_1_and_6_1.xlsx file
 file <- "data-raw/Figures_1_1_and_6_1.xlsx"
 
@@ -24,6 +26,8 @@ Figures_1_1_and_6_1$Group <- ifelse(Figures_1_1_and_6_1$Country %in% group_r_cou
 # Save as dataset
 save(data = Figures_1_1_and_6_1, file = "data/Figures_1_1_and_6_1.rda", compress = TRUE)
 
+# Latinobarómetro
+
 # Read the Latinobarometro_2023_Costa_Rica_Spss_esp_v1.sav file
 file_spss <- "data-raw/Latinobarometro_2023_Costa_Rica_Spss_esp_v1.sav"
 
@@ -38,6 +42,8 @@ Latinobarometro_2023_Costa_Rica_Spss_esp_v1 <- haven::zap_labels(Latinobarometro
 
 # Save as dataset
 save(Latinobarometro_2023_Costa_Rica_Spss_esp_v1, file = "data/Latinobarometro_2023_Costa_Rica_Spss_esp_v1.rda", compress = TRUE)
+
+# Big 5
 
 # Read the big5CR.csv file
 file_big5 <- "data-raw/big5CR.csv"
@@ -110,3 +116,12 @@ big5CR$Yi <- NULL
 
 # Save as dataset
 save(big5CR, file = "data/big5CR.rda", compress = TRUE)
+
+# GAD 7 mexican medical studenst
+
+gad7 <- read.csv("data-raw/mexican_medical_students_mental_health_data.csv") |>
+  dplyr::select(id, gad1:gad7)
+
+gad7 <- gad7[complete.cases(gad7),]
+
+save(gad7, file = "data/gad7.rda", compress = TRUE)
