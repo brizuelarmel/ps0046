@@ -17,6 +17,7 @@ Suggests:
     DHARMa,
     haven,
     marginaleffects,
+    pwr,
     qqplotr,
     readxl,
     see
