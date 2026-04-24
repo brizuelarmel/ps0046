@@ -125,3 +125,79 @@ gad7 <- read.csv("data-raw/mexican_medical_students_mental_health_data.csv") |>
 gad7 <- gad7[complete.cases(gad7),]
 
 save(gad7, file = "data/gad7.rda", compress = TRUE)
+
+# Education conspiracy beliefs and misinformation
+
+conspiracy <- read.csv("data-raw/Education_Conspiracy.csv", header = TRUE)
+
+colnames(conspiracy)[colnames(conspiracy) == "DEMO1"] <- "Age"
+colnames(conspiracy)[colnames(conspiracy) == "DEMO2"] <- "Gender"
+colnames(conspiracy)[colnames(conspiracy) == "DEMO3"] <- "Ethnicity"
+colnames(conspiracy)[colnames(conspiracy) == "DEMO4"] <- "Education"
+
+{
+  conspiracy$Education[conspiracy$Education == 7] <- 8
+  conspiracy$Education[conspiracy$Education == 6] <- 7
+  conspiracy$Education[conspiracy$Education == 5] <- 6
+  conspiracy$Education[conspiracy$Education == 8] <- 5
+  conspiracy$Education[conspiracy$Education == 5] <- 4
+  conspiracy$Education[conspiracy$Education == 6] <- 5
+  conspiracy$Education[conspiracy$Education == 7] <- 6
+  conspiracy$Education[conspiracy$Education == 1] <- 2
+  conspiracy$Education[conspiracy$Education == 6] <- 5
+  conspiracy$Education <- conspiracy$Education - 1
+}
+
+conspiracy$Education <- as.factor(conspiracy$Education)
+
+conspiracy$EducationText <- factor(
+  ifelse(
+    conspiracy$Education == 1, "High School or Less",
+    ifelse(
+      conspiracy$Education == 2, "Certificate/Diploma",
+      ifelse(
+        conspiracy$Education == 3, "Bachelors",
+        ifelse(conspiracy$Education == 4, "Masters/PhD", NA)
+      )
+    )
+  ),
+  levels = c("High School or Less", "Certificate/Diploma", "Bachelors", "Masters/PhD") # Specify the order
+)
+
+conspiracy$Grandiose_Narcissism <- ifelse(conspiracy$Grandiose_Narcissism > 3.3, 3.3, conspiracy$Grandiose_Narcissism)
+
+conspiracy <- conspiracy |>
+  dplyr::select(
+    # Demographics
+    Age,               # DEMO1
+    Gender,            # DEMO2
+    Ethnicity,         # DEMO3
+    Education,         # DEMO4 (factor, 1–4)
+    EducationText,     # labelled version of Education
+    Income,            # DEMO5 equivalent (numeric)
+    PoliticalOrientation, PolLeftRight, PolLeftMiddleRight,
+    
+    # Outcome / predictor total scores
+    CMQtotal,
+    GCBStotal,
+    NeedForUniqueness,
+    SECStotal,
+    DichotomousThinking,
+    NeedtoBelong,
+    SDOtotal,
+    CFItotal,
+    SAILtotal,
+    LOCint, LOCext,
+    CRTmean,
+    
+    # FFNI total and subscales
+    Total_FFNI,
+    Grandiose_Narcissism,   # already Winsorized at ±3.3 SD per script
+    Vulnerable_Narcissism,
+    Acclaim_Seeking, Arrogance, Authoritativeness, Distrust,
+    Entitlement, Exhibitionism, Exploitativeness, Grandiose_Fantasies,
+    Indifference, Lack_of_Empathy, Manipulativeness, Need_for_Admiration,
+    Reactive_Anger, Shame, Thrill_Seeking
+  )
+
+save(conspiracy, file = "data/conspiracy.rda", compress = TRUE)
