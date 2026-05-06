@@ -201,3 +201,9 @@ conspiracy <- conspiracy |>
   )
 
 save(conspiracy, file = "data/conspiracy.rda", compress = TRUE)
+
+# Runners data
+
+runners <- readxl::read_excel("data-raw/Figure 8.1.xlsx")
+
+save(runners, file = "data/runners.rda", compress = TRUE)
