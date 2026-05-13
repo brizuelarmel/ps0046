@@ -207,3 +207,9 @@ save(conspiracy, file = "data/conspiracy.rda", compress = TRUE)
 runners <- readxl::read_excel("data-raw/Figure 8.1.xlsx")
 
 save(runners, file = "data/runners.rda", compress = TRUE)
+
+# Escritura data
+
+escritura <- read.csv("data-raw/escritura.csv")
+
+save(escritura, file = "data/escritura.rda", compress = TRUE)
