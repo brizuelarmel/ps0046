@@ -213,3 +213,9 @@ save(runners, file = "data/runners.rda", compress = TRUE)
 escritura <- read.csv("data-raw/escritura.csv")
 
 save(escritura, file = "data/escritura.rda", compress = TRUE)
+
+# Naturaleza data
+
+naturaleza <- read.csv("data-raw/naturaleza.csv")
+
+save(naturaleza, file = "data/naturaleza.rda", compress = TRUE)
