@@ -68,5 +68,5 @@
 #'   \emph{Journal of Environmental Psychology}, \emph{72}, 101498.
 #'   https://doi.org/10.1016/j.jenvp.2020.101498
 #' @keywords datasets
-#' @name naturaleza
+#' @name naturaleza1
 NULL

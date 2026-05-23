@@ -1,0 +1,66 @@
+#' The affective benefits of nature exposure (Study 4)
+#'
+#' Data from Study 4 of Meidenbauer et al. (2020), examining whether the
+#' mood improvement found for Very High Aesthetic Nature (VHA-Nat) images in
+#' Study 2 was due to the scenic nature category itself or simply due to
+#' preference. Participants (N = 602) were recruited from the United States
+#' via Amazon Mechanical Turk. The study employed a between-subjects design
+#' crossing 3 Very High Aesthetic (VHA) image categories (Animals, Nature,
+#' Urban) with 2 mood induction procedure (MIP) conditions (Negative,
+#' Neutral), yielding 6 groups. Before viewing images, participants completed
+#' a mood induction by reading a brief story (negative or neutral). State
+#' affect was measured after the MIP (T1) and again after viewing and rating
+#' 30 images from their assigned category (T2), using the State-Trait Anxiety
+#' Inventory (STAI) and Visual Analog Scales (VAS) for four emotions.
+#'
+#' @format A data frame with 602 rows and 18 columns:
+#' \describe{
+#'   \item{Sub}{Participant identification number.}
+#'   \item{MIP_Con}{Mood induction procedure condition. \code{"Neg"} =
+#'     Negative mood induction (story about Alzheimer's bereavement);
+#'     \code{"Neut"} = Neutral mood induction (excerpt from A Brief History
+#'     of Time).}
+#'   \item{Pic_Con}{VHA image category assigned to the participant.
+#'     \code{"Anim"} = Animals (n = 201); \code{"Nat"} = Nature (n = 205);
+#'     \code{"Urb"} = Urban (n = 196).}
+#'   \item{Avg_Pic_Rate}{Average preference rating given by the participant to
+#'     the 30 images they viewed. Scale from 1 (strongly dislike) to 7
+#'     (strongly like).}
+#'   \item{STAI1_pos}{Post-MIP (T1) STAI positive affect composite. Mean of
+#'     three items (calm, relaxed, content) rated on a 1-4 scale. Higher
+#'     scores indicate greater positive affect.}
+#'   \item{STAI1_neg}{Post-MIP (T1) STAI negative affect composite. Mean of
+#'     three items (upset, tense, worried) rated on a 1-4 scale. Higher
+#'     scores indicate greater negative affect.}
+#'   \item{mood1_happy}{Post-MIP (T1) VAS rating for happiness.
+#'     Scale from 0 to 100.}
+#'   \item{mood1_sad}{Post-MIP (T1) VAS rating for sadness.
+#'     Scale from 0 to 100.}
+#'   \item{mood1_inspired}{Post-MIP (T1) VAS rating for inspiration.
+#'     Scale from 0 to 100.}
+#'   \item{mood1_angry}{Post-MIP (T1) VAS rating for anger.
+#'     Scale from 0 to 100.}
+#'   \item{STAI2_pos}{Post-image-viewing (T2) STAI positive affect composite.
+#'     Mean of three items (calm, relaxed, content) rated on a 1-4 scale.}
+#'   \item{STAI2_neg}{Post-image-viewing (T2) STAI negative affect composite.
+#'     Mean of three items (upset, tense, worried) rated on a 1-4 scale.}
+#'   \item{mood2_happy}{Post-image-viewing (T2) VAS rating for happiness.
+#'     Scale from 0 to 100.}
+#'   \item{mood2_sad}{Post-image-viewing (T2) VAS rating for sadness.
+#'     Scale from 0 to 100.}
+#'   \item{mood2_inspired}{Post-image-viewing (T2) VAS rating for inspiration.
+#'     Scale from 0 to 100.}
+#'   \item{mood2_angry}{Post-image-viewing (T2) VAS rating for anger.
+#'     Scale from 0 to 100.}
+#'   \item{Age}{Participant age in years (range: 19-69).}
+#'   \item{Gender..1.M.2.F.}{Participant gender. (1 = Male, n = 271;
+#'     2 = Female, n = 327; other/not reported, n = 4)}
+#' }
+#' @source Meidenbauer, K. L., Stenfors, C. U. D., Bratman, G. N., Gross,
+#'   J. J., Schertz, K. E., Choe, K. W., & Berman, M. G. (2020). The
+#'   affective benefits of nature exposure: What's nature got to do with it?
+#'   \emph{Journal of Environmental Psychology}, \emph{72}, 101498.
+#'   https://doi.org/10.1016/j.jenvp.2020.101498
+#' @keywords datasets
+#' @name naturaleza2
+NULL

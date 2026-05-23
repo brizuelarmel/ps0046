@@ -216,6 +216,8 @@ save(escritura, file = "data/escritura.rda", compress = TRUE)
 
 # Naturaleza data
 
-naturaleza <- read.csv("data-raw/naturaleza.csv")
+naturaleza1 <- read.csv("data-raw/naturaleza1.csv")
+save(naturaleza1, file = "data/naturaleza1.rda", compress = TRUE)
 
-save(naturaleza, file = "data/naturaleza.rda", compress = TRUE)
+naturaleza2 <- read.csv("data-raw/naturaleza2.csv")
+save(naturaleza2, file = "data/naturaleza2.rda", compress = TRUE)
