@@ -1,31 +1,36 @@
-#' The affective benefits of nature exposure (Study 4)
+#' The affective benefits of nature exposure (Study 2)
 #'
-#' Data from Study 4 of Meidenbauer et al. (2020), examining whether very
-#' highly preferred nature images improve affective state to the same degree
-#' as equally preferred images from other categories (urban scenes and
-#' animals). Participants (N = 602) were recruited from the United States via
-#' Amazon Mechanical Turk. The study employed a 3 (image category: Nature,
-#' Urban, Animals) x 2 (mood induction: Negative, Neutral) fully
-#' between-subjects design. Half of the participants underwent a negative
-#' mood induction procedure (reading a sad story) prior to viewing the images,
-#' while the other half read a neutral story. Participants then viewed 30
-#' images from their assigned category, rating each image on preference
-#' (1 = strongly dislike, 7 = strongly like). State affect was measured
-#' before (T1) and after (T2) image viewing using the State-Trait Anxiety
-#' Inventory (STAI) and Visual Analog Scales (VAS) for four emotions.
+#' Data from Study 2 of Meidenbauer et al. (2020), examining whether changes
+#' in state affect after viewing images are due to the naturalness of the
+#' environment, due purely to aesthetic preference, or result from a
+#' combination of both. Participants (N = 615) were recruited from the United
+#' States via Amazon Mechanical Turk. The study employed a between-subjects
+#' design with 6 image conditions crossing environment type (Nature vs.
+#' Urban) and aesthetic value level (Very High, High, Low, Very Low). Not all
+#' combinations were possible: very high aesthetic urban images and very low
+#' aesthetic nature images could not be created from the validated image pool.
+#' Each participant viewed 45 images from their assigned condition, rating
+#' each on preference (1 = strongly dislike, 7 = strongly like). State affect
+#' was measured before (T1) and after (T2) image viewing using the State-Trait
+#' Anxiety Inventory (STAI) and Visual Analog Scales (VAS) for four emotions.
 #'
-#' @format A data frame with 602 rows and 18 columns:
+#' @format A data frame with 615 rows and 19 columns:
 #' \describe{
 #'   \item{Sub}{Participant identification number.}
-#'   \item{MIP_Con}{Mood induction procedure condition. \code{"Neg"} = Negative
-#'     mood induction (sad story about a young woman whose father died from
-#'     Alzheimer's dementia); \code{"Neut"} = Neutral mood induction (excerpt
-#'     from \emph{A Brief History of Time} by Stephen Hawking).}
-#'   \item{Pic_Con}{Image category condition. \code{"Nat"} = Nature scenes;
-#'     \code{"Urb"} = Urban scenes; \code{"Anim"} = Animals. All image sets
-#'     were equated on aesthetic preference in a prior validation study.}
+#'   \item{imageCon}{Image condition assigned to the participant. Factor with
+#'     six levels: \code{"VHA_Nat"} (Very High Aesthetic Nature, n = 103),
+#'     \code{"HA_Nat"} (High Aesthetic Nature, n = 103), \code{"HA_Urb"} (High
+#'     Aesthetic Urban, n = 104), \code{"LA_Nat"} (Low Aesthetic Nature,
+#'     n = 103), \code{"LA_Urb"} (Low Aesthetic Urban, n = 100), and
+#'     \code{"VLA_Urb"} (Very Low Aesthetic Urban, n = 102).}
+#'   \item{natCon}{Environment type. \code{"Nat"} = Nature scenes;
+#'     \code{"Urb"} = Urban scenes.}
+#'   \item{prefCon}{Aesthetic value (preference) level. \code{"VeryHigh"} =
+#'     Very High Aesthetic Value; \code{"High"} = High Aesthetic Value;
+#'     \code{"Low"} = Low Aesthetic Value; \code{"VeryLow"} = Very Low
+#'     Aesthetic Value.}
 #'   \item{Avg_Pic_Rate}{Average preference rating given by the participant to
-#'     the 30 images they viewed. Scale from 1 (strongly dislike) to 7
+#'     the 45 images they viewed. Scale from 1 (strongly dislike) to 7
 #'     (strongly like).}
 #'   \item{STAI1_pos}{Pre-intervention (T1) STAI positive affect composite.
 #'     Mean of three items (calm, relaxed, content) rated on a 1-4 scale.
@@ -53,8 +58,9 @@
 #'     Scale from 0 to 100.}
 #'   \item{mood2_angry}{Post-intervention (T2) VAS rating for anger.
 #'     Scale from 0 to 100.}
-#'   \item{Age}{Participant age in years.}
-#'   \item{Gender..1.M.2.F.}{Participant gender. (1 = Male, 2 = Female)}
+#'   \item{Age}{Participant age in years (range: 20-76).}
+#'   \item{Gender..1.M.2.F.}{Participant gender. (1 = Male, n = 287;
+#'     2 = Female, n = 324; 3 = Other, n = 4)}
 #' }
 #' @source Meidenbauer, K. L., Stenfors, C. U. D., Bratman, G. N., Gross,
 #'   J. J., Schertz, K. E., Choe, K. W., & Berman, M. G. (2020). The
