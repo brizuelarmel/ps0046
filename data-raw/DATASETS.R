@@ -221,3 +221,9 @@ save(naturaleza1, file = "data/naturaleza1.rda", compress = TRUE)
 
 naturaleza2 <- read.csv("data-raw/naturaleza2.csv")
 save(naturaleza2, file = "data/naturaleza2.rda", compress = TRUE)
+
+# Bienestar data (Soto, 2019)
+
+bienestar <- read.csv("data-raw/bienestar.csv")
+
+save(bienestar, file = "data/bienestar.rda", compress = TRUE)
