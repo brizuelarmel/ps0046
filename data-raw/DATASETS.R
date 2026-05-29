@@ -227,3 +227,12 @@ save(naturaleza2, file = "data/naturaleza2.rda", compress = TRUE)
 bienestar <- read.csv("data-raw/bienestar.csv")
 
 save(bienestar, file = "data/bienestar.rda", compress = TRUE)
+
+# Lego data (McDougal et al., 2024)
+
+lego <- read.csv("data-raw/lego.csv")
+
+lego$Condition <- factor(lego$Condition,
+                         levels = c("Physical Lego", "Digital Lego", "Control"))
+
+save(lego, file = "data/lego.rda", compress = TRUE)

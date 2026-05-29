@@ -1,0 +1,273 @@
+"ID","Condition","Sessions_Attended","Age","X1_Mental_Rotation","X2_Mental_Rotation"
+"LT3001","Control",10,8.19,16,15
+"LT3002","Control",10,7.76,23,19
+"LT3003","Control",10,7.41,22,15
+"LT3004","Control",10,7.47,24,28
+"LT3005","Control",10,7.61,20,10
+"LT3006","Control",10,7.46,20,21
+"LT3007","Control",10,7.5,24,21
+"LT3008","Control",10,8.15,29,38
+"LT3009","Control",9,7.71,31,37
+"LT3010","Control",10,7.41,18,17
+"LT3011","Control",10,7.12,28,25
+"LT3012","Physical Lego",11,7.98,17,18
+"LT3013","Physical Lego",12,8.44,23,19
+"LT3014","Physical Lego",12,7.83,21,20
+"LT3015","Physical Lego",5,8.28,NA,NA
+"LT3016","Physical Lego",9,8.45,35,33
+"LT3017","Physical Lego",12,8.22,21,15
+"LT3018","Control",12,8.62,19,22
+"LT3019","Control",12,8.62,20,19
+"LT3020","Control",12,8.44,15,20
+"LT3021","Control",12,8.05,18,23
+"LT3022","Control",12,8.48,20,22
+"LT3023","Control",12,8.47,22,34
+"LT3024","Control",12,7.8,30,35
+"LT3025","Control",12,8.42,18,27
+"LT3026","Control",12,7.78,33,20
+"LT3027","Control",12,8.19,37,37
+"LT3028","Control",12,8.72,20,18
+"LT3029","Control",9,8.56,12,12
+"LT3030","Control",12,8.36,29,36
+"LT3031","Control",11,8.01,21,17
+"LT3032","Control",12,7.8,14,18
+"LT3033","Control",10,8.17,39,38
+"LT3034","Physical Lego",11,8.46,26,35
+"LT3035","Physical Lego",12,8.25,35,20
+"LT3036","Physical Lego",12,7.79,19,14
+"LT3037","Physical Lego",10,8.53,15,20
+"LT3038","Physical Lego",12,7.8,21,20
+"LT3039","Physical Lego",10,8.48,20,19
+"LT3040","Physical Lego",9,8.04,NA,NA
+"LT3041","Physical Lego",12,7.27,20,20
+"LT3042","Physical Lego",12,8.96,20,26
+"LT3043","Physical Lego",12,7.92,32,35
+"LT3044","Physical Lego",9,8.1,23,21
+"LT3045","Physical Lego",9,8.36,20,34
+"LT3046","Physical Lego",12,8.17,20,21
+"LT3047","Physical Lego",11,8.43,38,39
+"LT3048","Physical Lego",11,7.93,25,NA
+"LT3049","Control",12,7.99,13,19
+"LT3050","Control",12,7.73,33,30
+"LT3051","Control",12,8.25,25,20
+"LT3052","Control",9,9.28,36,37
+"LT3053","Control",12,7.96,38,36
+"LT3054","Control",1,7.94,20,NA
+"LT3055","Control",12,8.23,27,33
+"LT3056","Control",12,7.87,18,16
+"LT3057","Digital Lego",11,7.77,34,35
+"LT3058","Digital Lego",10,8.36,19,23
+"LT3059","Digital Lego",9,7.8,30,26
+"LT3060","Digital Lego",9,7.83,21,24
+"LT3061","Digital Lego",0,8.25,NA,NA
+"LT3062","Digital Lego",7,8.41,20,NA
+"LT3063","Digital Lego",0,8.05,NA,NA
+"LT3064","Control",0,8.37,23,NA
+"LT3065","Control",1,7.86,20,NA
+"LT3066","Control",5,8.17,29,NA
+"LT3067","Control",12,8.5,31,25
+"LT3068","Control",12,8.51,20,22
+"LT3069","Control",11,6.85,23,18
+"LT3070","Digital Lego",5,7.08,22,NA
+"LT3071","Digital Lego",3,7.27,NA,NA
+"LT3072","Digital Lego",9,7.97,15,20
+"LT3073","Digital Lego",9,7.27,32,33
+"LT3074","Digital Lego",10,7.93,18,16
+"LT3075","Digital Lego",7,7.43,20,NA
+"LT3076","Digital Lego",5,7.74,15,NA
+"LT3077","Digital Lego",2,7.51,23,NA
+"LT3078","Digital Lego",9,7.43,36,36
+"LT3079","Digital Lego",10,7.61,16,14
+"LT3080","Digital Lego",3,7.93,19,NA
+"LT3081","Digital Lego",12,7.9,25,30
+"LT3082","Digital Lego",4,7.29,26,NA
+"LT3083","Digital Lego",3,7.23,19,NA
+"LT3084","Digital Lego",3,7.97,36,NA
+"LT3085","Digital Lego",9,7.84,18,26
+"LT3086","Digital Lego",12,7.87,23,16
+"LT3087","Digital Lego",11,7.54,28,33
+"LT3088","Digital Lego",10,7.9,38,38
+"LT3089","Digital Lego",1,7.59,21,NA
+"LT3090","Physical Lego",6,7.72,22,NA
+"LT3091","Digital Lego",12,7.94,38,38
+"LT3092","Digital Lego",12,7.83,15,13
+"LT3093","Physical Lego",10,7.99,27,34
+"LT3094","Physical Lego",0,7.06,16,NA
+"LT3095","Digital Lego",12,7.38,20,23
+"LT3096","Physical Lego",9,7.64,33,33
+"LT3097","Physical Lego",11,7.83,37,33
+"LT3098","Digital Lego",12,7.88,18,18
+"LT3099","Digital Lego",12,7.28,19,22
+"LT3100","Physical Lego",9,7.23,18,20
+"LT3101","Physical Lego",1,7.84,33,NA
+"LT3102","Digital Lego",11,7.17,20,19
+"LT3103","Physical Lego",11,7.65,35,38
+"LT3104","Physical Lego",12,7.78,22,19
+"LT3105","Digital Lego",9,7.53,23,21
+"LT3106","Physical Lego",12,7.68,23,27
+"LT3107","Physical Lego",2,7.33,19,NA
+"LT3108","Physical Lego",11,7.7,34,27
+"LT3109","Digital Lego",12,7.73,31,36
+"LT3110","Physical Lego",0,7.83,21,NA
+"LT3111","Physical Lego",2,7.72,22,NA
+"LT3112","Physical Lego",2,7.68,13,NA
+"LT3113","Physical Lego",0,7.69,20,NA
+"LT3114","Physical Lego",1,7.69,35,NA
+"LT3115","Physical Lego",2,7.4,14,NA
+"LT3116","Physical Lego",5,7.8,17,NA
+"LT3117","Physical Lego",2,7.8,24,NA
+"LT3118","Digital Lego",1,7.88,23,NA
+"LT3119","Digital Lego",3,7.27,NA,NA
+"LT3120","Physical Lego",2,8.53,32,NA
+"LT3121","Digital Lego",2,7.99,35,NA
+"LT3122","Digital Lego",2,7.62,24,NA
+"LT3123","Digital Lego",4,7.48,NA,NA
+"LT3124","Digital Lego",3,7.82,NA,NA
+"LT3125","Digital Lego",4,7.25,18,NA
+"LT3126","Control",12,7.29,23,22
+"LT3127","Control",12,7.12,20,34
+"LT3128","Control",12,7.73,23,16
+"LT3129","Control",12,7.5,25,25
+"LT3130","Physical Lego",10,7.57,31,38
+"LT3138","Physical Lego",11,8.08,20,24
+"LT3142","Physical Lego",12,7.88,33,37
+"LT3143","Physical Lego",12,8.07,19,13
+"LT3144","Physical Lego",11,7.92,34,20
+"LT3145","Physical Lego",12,7.56,31,20
+"LT3146","Physical Lego",12,7.92,23,17
+"LT3147","Physical Lego",12,8.01,22,20
+"LT3148","Digital Lego",9,7.1,17,NA
+"LT3149","Digital Lego",9,7.45,20,NA
+"LT3150","Digital Lego",9,7.4,19,NA
+"LT4001","Digital Lego",10,8.76,27,NA
+"LT4002","Digital Lego",10,8.53,14,16
+"LT4003","Digital Lego",4,9.3,NA,NA
+"LT4004","Digital Lego",10,8.62,21,20
+"LT4005","Digital Lego",1,8.77,NA,NA
+"LT4006","Digital Lego",10,8.64,39,38
+"LT4007","Digital Lego",10,8.74,25,24
+"LT4008","Digital Lego",10,8.56,32,39
+"LT4009","Digital Lego",10,8.91,31,30
+"LT4010","Digital Lego",2,9.08,NA,NA
+"LT4011","Digital Lego",9,9.4,19,24
+"LT4012","Digital Lego",6,8.79,NA,NA
+"LT4013","Physical Lego",11,9,32,21
+"LT4014","Physical Lego",12,8.84,14,24
+"LT4015","Physical Lego",12,8.64,26,29
+"LT4016","Physical Lego",9,9.11,15,22
+"LT4017","Physical Lego",10,9.15,31,29
+"LT4018","Physical Lego",11,9.45,36,34
+"LT4019","Control",12,9.11,20,38
+"LT4020","Control",12,8.74,18,27
+"LT4021","Control",12,9.42,24,33
+"LT4022","Control",12,9.01,20,20
+"LT4023","Control",12,9.45,39,37
+"LT4024","Control",12,8.83,19,17
+"LT4025","Control",10,8.97,37,26
+"LT4026","Control",12,8.88,18,20
+"LT4027","Control",11,8.99,34,19
+"LT4028","Control",12,9.44,37,38
+"LT4029","Control",12,9.54,29,30
+"LT4030","Physical Lego",12,9.59,19,22
+"LT4031","Physical Lego",12,9.54,18,21
+"LT4032","Physical Lego",5,9.02,38,NA
+"LT4033","Physical Lego",12,8.86,20,32
+"LT4034","Physical Lego",12,9.33,20,19
+"LT4035","Control",11,8.86,24,15
+"LT4036","Control",12,9.21,21,23
+"LT4037","Control",12,10.15,22,15
+"LT4038","Physical Lego",9,8.93,35,35
+"LT4039","Physical Lego",12,8.93,25,34
+"LT4040","Physical Lego",11,9.25,32,31
+"LT4041","Physical Lego",11,9.09,32,36
+"LT4042","Control",12,9.04,19,24
+"LT4043","Control",12,9.31,39,38
+"LT4044","Control",11,8.94,32,36
+"LT4045","Control",12,8.02,17,17
+"LT4046","Control",12,9.54,21,26
+"LT4047","Control",12,9.26,24,23
+"LT4048","Control",12,9.17,36,39
+"LT4049","Digital Lego",3,9.34,27,NA
+"LT4050","Digital Lego",12,9.2,36,39
+"LT4051","Digital Lego",1,9.13,21,NA
+"LT4052","Digital Lego",1,8.71,24,NA
+"LT4053","Digital Lego",12,8.8,31,38
+"LT4054","Digital Lego",0,8.78,20,NA
+"LT4055","Digital Lego",0,9.01,30,NA
+"LT4056","Digital Lego",1,8.53,25,NA
+"LT4057","Control",10,8.78,17,16
+"LT4058","Control",12,9.2,35,34
+"LT4059","Control",12,9.47,29,27
+"LT4060","Control",5,9.26,17,NA
+"LT4061","Control",11,8.61,19,21
+"LT4062","Control",12,9.34,36,39
+"LT4063","Control",12,8.8,33,39
+"LT4064","Control",12,8.67,17,14
+"LT4065","Control",12,9.19,38,38
+"LT4066","Digital Lego",1,9.35,24,NA
+"LT4067","Digital Lego",3,9.35,21,NA
+"LT4068","Digital Lego",3,8.69,37,NA
+"LT4069","Digital Lego",2,8.34,18,NA
+"LT4070","Digital Lego",9,8.8,23,24
+"LT4071","Digital Lego",9,8.16,20,34
+"LT4072","Digital Lego",9,8.92,29,27
+"LT4073","Digital Lego",9,8.66,28,35
+"LT4074","Digital Lego",9,8.76,21,22
+"LT4075","Digital Lego",12,8.12,24,26
+"LT4076","Digital Lego",11,9.03,29,37
+"LT4077","Digital Lego",9,8.51,33,39
+"LT4078","Physical Lego",0,8.26,23,NA
+"LT4079","Physical Lego",1,8.95,23,NA
+"LT4080","Physical Lego",1,8.83,20,NA
+"LT4081","Physical Lego",3,8.25,11,NA
+"LT4082","Digital Lego",2,8.8,21,NA
+"LT4083","Physical Lego",1,8.41,20,NA
+"LT4084","Physical Lego",3,8.53,20,NA
+"LT4085","Digital Lego",4,8.31,17,NA
+"LT4086","Digital Lego",5,7.99,26,NA
+"LT4087","Digital Lego",5,8.36,21,NA
+"LT4088","Digital Lego",1,8.79,25,NA
+"LT4089","Digital Lego",1,8.61,19,NA
+"LT4090","Control",12,8.94,24,30
+"LT4091","Control",12,8.82,28,18
+"LT4092","Physical Lego",10,8.85,33,39
+"LT4093","Control",9,8.25,16,25
+"LT4094","Control",12,8.18,18,23
+"LT4095","Physical Lego",11,8.82,26,32
+"LT4096","Physical Lego",11,8.96,14,34
+"LT4097","Control",12,9.09,35,35
+"LT4098","Physical Lego",12,9.02,25,15
+"LT4099","Physical Lego",12,9,22,26
+"LT4100","Physical Lego",1,8.48,20,NA
+"LT4101","Physical Lego",10,8.63,38,39
+"LT4102","Physical Lego",12,8.27,38,36
+"LT4103","Physical Lego",0,8.56,22,NA
+"LT4104","Physical Lego",12,8.75,36,36
+"LT4105","Digital Lego",9,8.53,34,29
+"LT4106","Digital Lego",9,7.68,37,NA
+"LT4107","Digital Lego",9,7.29,23,17
+"LT4108","Digital Lego",9,7.14,18,19
+"LT4109","Digital Lego",9,8.93,19,29
+"LT4110","Digital Lego",8,7.77,20,NA
+"LT4111","Digital Lego",9,8.54,28,20
+"LT4112","Digital Lego",9,7.34,19,18
+"LT4113","Digital Lego",9,7.13,13,20
+"LT4114","Digital Lego",9,7.2,10,12
+"LT4115","Digital Lego",9,7.93,15,NA
+"LT4116","Digital Lego",9,7.82,20,35
+"LT4117","Digital Lego",7,7.6,23,NA
+"LT4118","Digital Lego",12,7.24,28,27
+"LT4119","Digital Lego",9,8.96,27,35
+"LT4120","Digital Lego",11,7.4,15,20
+"LT4121","Digital Lego",9,7.85,19,31
+"LT4122","Digital Lego",10,7.93,22,21
+"LT4123","Digital Lego",12,7.41,37,34
+"LT4124","Digital Lego",11,7.11,23,20
+"LT4125","Digital Lego",12,8.42,13,38
+"LT4126","Digital Lego",9,8.25,16,18
+"LT4127","Digital Lego",12,8.74,35,35
+"LT4128","Digital Lego",12,8.5,24,21
+"LT4129","Digital Lego",9,7.74,34,30
+"LT4130","Digital Lego",11,7.97,17,18
+"LT4133","Digital Lego",11,7.6,22,18
+"LT4135","Physical Lego",12,8.51,34,35
