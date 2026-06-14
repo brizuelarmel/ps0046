@@ -1,0 +1,24 @@
+#' Calidad de vida tras cirugia plastica en 21 clinicas
+#'
+#' Datos de pacientes sometidos a cirugia plastica en 21 clinicas diferentes.
+#' Los clientes estan agrupados (anidados) dentro de las clinicas, por lo que
+#' las observaciones de una misma clinica no son independientes (comparten el
+#' mismo cirujano o equipo). Estos datos se usan para ilustrar modelos
+#' multinivel o de efectos mixtos, en los que el intercepto y la pendiente
+#' pueden variar por clinica.
+#'
+#' @format Un data frame con 1576 filas y 8 columnas:
+#' \describe{
+#'   \item{id}{Identificador del participante.}
+#'   \item{post_qol}{Calidad de vida POST cirugia (variable respuesta).}
+#'   \item{base_qol}{Calidad de vida PRE cirugia (control).}
+#'   \item{days}{Dias transcurridos entre la cirugia y la medicion POST.}
+#'   \item{clinic}{Clinica en la que se realizo la cirugia (1-21).}
+#'   \item{bdi}{Depresion medida con el Beck Depression Inventory.}
+#'   \item{reason}{Razon de la cirugia: \code{0} = cambio estetico,
+#'     \code{1} = razon fisica.}
+#'   \item{months}{Meses transcurridos entre la cirugia y la medicion POST.}
+#' }
+#' @keywords datasets
+#' @name cosmetic
+NULL

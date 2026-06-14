@@ -236,3 +236,15 @@ lego$Condition <- factor(lego$Condition,
                          levels = c("Physical Lego", "Digital Lego", "Control"))
 
 save(lego, file = "data/lego.rda", compress = TRUE)
+
+# Cosmetic surgery data (cirugia plastica, 21 clinicas)
+
+cosmetic <- read.csv("data-raw/cosmetic.csv")
+
+save(cosmetic, file = "data/cosmetic.rda", compress = TRUE)
+
+# Van Bourg et al. (2020) prosocial dogs data
+
+van_bourg_2020 <- read.csv("data-raw/van_bourg_2020.csv")
+
+save(van_bourg_2020, file = "data/van_bourg_2020.rda", compress = TRUE)
