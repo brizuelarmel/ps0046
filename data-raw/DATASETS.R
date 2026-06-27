@@ -248,3 +248,23 @@ save(cosmetic, file = "data/cosmetic.rda", compress = TRUE)
 van_bourg_2020 <- read.csv("data-raw/van_bourg_2020.csv")
 
 save(van_bourg_2020, file = "data/van_bourg_2020.rda", compress = TRUE)
+
+# NIMH Treatment of Depression Collaborative Research Program
+# (Elkin et al., 1989)
+
+nimh_tdcrp <- read.csv("data-raw/nimh_tdcrp.csv")
+
+nimh_tdcrp$tratamiento <- factor(
+  nimh_tdcrp$tratamiento,
+  levels = c("Placebo", "CBT"))
+
+nimh_tdcrp$remitio <- as.integer(nimh_tdcrp$remitio)
+
+save(nimh_tdcrp, file = "data/nimh_tdcrp.rda", compress = TRUE)
+
+# Adverse Childhood Experiences (ACE) Study
+# (Felitti et al., 1998)
+
+ace_study <- read.csv("data-raw/ace_study.csv")
+
+save(ace_study, file = "data/ace_study.rda", compress = TRUE)
