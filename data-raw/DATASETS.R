@@ -268,3 +268,50 @@ save(nimh_tdcrp, file = "data/nimh_tdcrp.rda", compress = TRUE)
 ace_study <- read.csv("data-raw/ace_study.csv")
 
 save(ace_study, file = "data/ace_study.rda", compress = TRUE)
+
+# Predictores aleatorios (ejemplo de parsimonia)
+
+aleatorios <- read.csv("data-raw/aleatorios.csv")
+
+save(aleatorios, file = "data/aleatorios.rda", compress = TRUE)
+
+# Diseno anidado entre-aulas (medidas no independientes)
+
+aulas_anidado <- read.csv("data-raw/aulas_anidado.csv")
+
+aulas_anidado$Aula <- factor(aulas_anidado$Aula)
+aulas_anidado$Metodo <- factor(
+  aulas_anidado$Metodo,
+  levels = c("innovador", "tradicional"))
+aulas_anidado$Nino <- factor(aulas_anidado$Nino)
+
+save(aulas_anidado, file = "data/aulas_anidado.rda", compress = TRUE)
+
+# Diseno cruzado: presencia del experimentador (medidas repetidas)
+
+presencia_experimentador <- read.csv("data-raw/presencia_experimentador.csv")
+
+presencia_experimentador$Experimenter <- factor(
+  presencia_experimentador$Experimenter,
+  levels = c("Absent", "Present"))
+
+save(presencia_experimentador, file = "data/presencia_experimentador.rda", compress = TRUE)
+
+# Diseno mixto: satisfaccion marital en parejas
+
+satisfaccion_parejas <- read.csv("data-raw/satisfaccion_parejas.csv")
+
+satisfaccion_parejas$Gender <- factor(
+  satisfaccion_parejas$Gender,
+  levels = c("H", "M"))
+satisfaccion_parejas$Children <- factor(
+  satisfaccion_parejas$Children,
+  levels = c("No", "Yes"))
+
+save(satisfaccion_parejas, file = "data/satisfaccion_parejas.rda", compress = TRUE)
+
+# Percentil escolar con 18 errores de captura (valores atipicos)
+
+sat_percentil <- read.csv("data-raw/sat_percentil.csv")
+
+save(sat_percentil, file = "data/sat_percentil.rda", compress = TRUE)

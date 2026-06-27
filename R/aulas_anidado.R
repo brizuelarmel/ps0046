@@ -1,0 +1,23 @@
+#' Diseno anidado entre-aulas (comprension lectora)
+#'
+#' Datos de un pequeno estudio ilustrativo con 18 ninos distribuidos en
+#' 6 aulas (3 ninos por aula). Las aulas 1-3 reciben un metodo de
+#' ensenanza \code{"innovador"} y las aulas 4-6 un metodo
+#' \code{"tradicional"}. Como el metodo varia \emph{entre} aulas y los
+#' ninos estan anidados dentro de su aula, las observaciones de una
+#' misma aula no son independientes. El puntaje de comprension lectora
+#' va de 1 a 9.
+#'
+#' @format Un data frame con 18 filas y 4 columnas:
+#' \describe{
+#'   \item{Aula}{Factor con 6 niveles (1-6); identifica cada aula.}
+#'   \item{Metodo}{Factor con dos niveles: \code{"innovador"} (aulas
+#'     1-3) y \code{"tradicional"} (aulas 4-6).}
+#'   \item{Nino}{Factor con 18 niveles (1-18); identificador unico del
+#'     nino dentro de su aula.}
+#'   \item{Comprension}{Puntaje de comprension lectora (1-9).}
+#' }
+#' @source Datos simulados con fines didacticos.
+#' @keywords datasets
+#' @name aulas_anidado
+NULL
